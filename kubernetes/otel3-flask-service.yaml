@@ -6,8 +6,8 @@ metadata:
     kompose.version: 1.22.0 (955b78124)
   creationTimestamp: null
   labels:
-    io.kompose.service: otel2-flask
-  name: otel2-flask
+    io.kompose.service: otel3-flask
+  name: otel3-flask
 spec:
   ports:
     - name: "5000"

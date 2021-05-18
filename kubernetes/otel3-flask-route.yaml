@@ -2,15 +2,15 @@ apiVersion: route.openshift.io/v1
 kind: Route
 metadata:
   labels:
-    io.kompose.service: otel2-flask
-  name: otel2-flask
+    io.kompose.service: otel3-flask
+  name: otel3-flask
 spec:
-  host: otel2-flask-argocd-python-flask.apps.vivaocp.comcast.net
+  host: otel3-flask-argocd-python-flask.apps.vivaocp.comcast.net
   path: "/"
   port:
     targetPort: '5000'
   to:
     kind: Service
-    name: otel2-flask
+    name: otel3-flask
     weight: 100
   wildcardPolicy: None
